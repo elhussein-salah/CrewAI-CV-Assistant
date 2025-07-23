@@ -1,0 +1,64 @@
+Senior Full Stack Engineer - Remote Opportunity
+
+Company: InnovateTech Solutions
+Location: Remote (US timezone preferred)
+Employment Type: Full-time
+Salary Range: $120,000 - $160,000
+
+About the Role:
+We are seeking a highly skilled Senior Full Stack Engineer to join our growing engineering team. You will be responsible for designing, developing, and maintaining scalable web applications that serve millions of users globally.
+
+Key Responsibilities:
+• Design and develop robust full-stack applications using modern technologies
+• Work with React.js, Next.js, and TypeScript for frontend development
+• Build scalable backend services using Node.js, Python, or Go
+• Implement and maintain microservices architecture
+• Collaborate with DevOps team on CI/CD pipelines and cloud infrastructure
+• Mentor junior developers and participate in code reviews
+• Optimize application performance and ensure scalability
+• Work with product managers and designers to translate requirements into technical solutions
+
+Required Qualifications:
+• Bachelor's degree in Computer Science or related field
+• 5+ years of professional software development experience
+• Strong proficiency in JavaScript/TypeScript and modern frameworks (React, Angular, or Vue)
+• Experience with backend technologies (Node.js, Python, Java, or Go)
+• Solid understanding of RESTful APIs and GraphQL
+• Experience with cloud platforms (AWS, GCP, or Azure)
+• Proficiency with version control systems (Git)
+• Knowledge of database systems (PostgreSQL, MongoDB, Redis)
+• Experience with containerization (Docker, Kubernetes)
+• Strong understanding of software testing methodologies
+
+Preferred Qualifications:
+• Experience with microservices architecture
+• Knowledge of DevOps practices and tools (Jenkins, GitLab CI, GitHub Actions)
+• Familiarity with monitoring and logging tools (ELK stack, Prometheus, Grafana)
+• Experience with serverless computing (Lambda, Cloud Functions)
+• Knowledge of message queuing systems (RabbitMQ, Apache Kafka)
+• Previous experience in a fast-paced startup environment
+• Contributions to open-source projects
+
+Technical Stack:
+Frontend: React.js, Next.js, TypeScript, Tailwind CSS
+Backend: Node.js, Python (FastAPI/Django), Go
+Database: PostgreSQL, MongoDB, Redis
+Cloud: AWS (EC2, S3, RDS, Lambda)
+DevOps: Docker, Kubernetes, Terraform, Jenkins
+Monitoring: DataDog, New Relic
+
+What We Offer:
+• Competitive salary and equity package
+• Comprehensive health, dental, and vision insurance
+• 401(k) matching
+• Flexible PTO policy
+• Professional development budget
+• Remote work flexibility
+• Latest MacBook Pro or equivalent
+• Home office stipend
+
+About InnovateTech Solutions:
+We're a rapidly growing B2B SaaS company that provides cutting-edge solutions for enterprise automation. Our platform serves over 10,000 companies worldwide and processes billions of transactions annually. We value innovation, collaboration, and continuous learning.
+
+Application Process:
+Please submit your resume along with a brief cover letter explaining your interest in the role. Include links to your GitHub profile and any relevant projects or portfolios.

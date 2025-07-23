@@ -1,0 +1,52 @@
+John Smith
+Software Engineer | Full Stack Developer
+
+Contact Information:
+Email: john.smith@email.com
+Phone: +1 (555) 123-4567
+LinkedIn: linkedin.com/in/johnsmith
+Location: San Francisco, CA
+
+SUMMARY
+Experienced software engineer with 5+ years of expertise in full-stack development. Proficient in JavaScript, Python, and React. Strong background in building scalable web applications and working in agile environments.
+
+TECHNICAL SKILLS
+• Programming Languages: JavaScript, Python, Java
+• Frontend: React, HTML5, CSS3, Bootstrap
+• Backend: Node.js, Express, Django
+• Databases: MySQL, MongoDB, PostgreSQL
+• Tools: Git, Docker, AWS, Jenkins
+• Methodologies: Agile, Scrum, TDD
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Developer | TechCorp Inc. | 2021 - Present
+• Developed and maintained web applications using React and Node.js
+• Collaborated with cross-functional teams to deliver high-quality software solutions
+• Implemented CI/CD pipelines reducing deployment time by 40%
+• Mentored junior developers and conducted code reviews
+
+Software Developer | StartupXYZ | 2019 - 2021
+• Built responsive web applications using JavaScript and Python
+• Worked with databases to optimize query performance
+• Participated in agile development processes
+• Contributed to open-source projects
+
+Junior Developer | WebSolutions LLC | 2018 - 2019
+• Assisted in frontend development using HTML, CSS, and JavaScript
+• Fixed bugs and implemented minor features
+• Learned version control systems and testing methodologies
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2014 - 2018
+
+PROJECTS
+E-commerce Platform (2022)
+• Built a full-stack e-commerce application using React and Django
+• Integrated payment gateway and inventory management system
+• Deployed on AWS with automated scaling
+
+Task Management App (2021)
+• Developed a team collaboration tool using MERN stack
+• Implemented real-time notifications and file sharing features

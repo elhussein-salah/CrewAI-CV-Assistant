@@ -1,0 +1,4 @@
+2025-07-23 23:23:02 - cv_assistant - ERROR - Agent initialization failed: 1 validation error for Agent
+tools.0
+  Input should be a valid dictionary or instance of BaseTool [type=model_type, input_value=Tool(name='learning_searc...at 0x000001D4DA180830>>), input_type=Tool]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
