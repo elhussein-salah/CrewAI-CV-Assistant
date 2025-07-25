@@ -72,7 +72,3 @@ crewai_cv_assistant/
 - **Models**: Change Ollama model in `config/ollama_config.py`
 - **Prompts**: Modify agent prompts in `prompts/` directory
 - **Search Tools**: Extend search capabilities in `tools/search_tool.py`
-
-## License
-
-MIT License
