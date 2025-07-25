@@ -13,6 +13,10 @@ class OllamaConfig:
     
     # Model-specific configurations
     MODEL_CONFIGS = {
+        "deepseek-r1:1.5b": {
+            "max_tokens": 4096,
+            "context_window": 8192
+        },
         "llama3": {
             "max_tokens": 4096,
             "context_window": 8192
@@ -20,17 +24,14 @@ class OllamaConfig:
         "mistral": {
             "max_tokens": 4096,
             "context_window": 8192
-        },
-        "codellama": {
-            "max_tokens": 4096,
-            "context_window": 16384
         }
     }
     
     @classmethod
     def get_model_config(cls):
         """Get configuration for the current model"""
-        return cls.MODEL_CONFIGS.get(cls.MODEL, cls.MODEL_CONFIGS["llama3"])
+        default_model = "llama3"
+        return cls.MODEL_CONFIGS.get(cls.MODEL, cls.MODEL_CONFIGS[default_model])
     
     @classmethod
     def get_llm_params(cls):

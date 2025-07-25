@@ -25,7 +25,7 @@ class SearchTool:
                 f"{query} site:indeed.com",
                 f"{query} site:glassdoor.com",
                 f"{query} remote jobs",
-                f'"{query}" hiring 2024'
+                f'"{query}" hiring now'
             ]
             
             all_results = []
@@ -113,12 +113,28 @@ def create_search_tools():
         location = parts[-1] if len(parts) > 1 else ""
         return search_tool.search_salary_info(job_title, location)
     
-    # Return simple tool objects
+    # Create proper LangChain Tool objects for CrewAI compatibility
     tools = [
-        {'name': 'job_search', 'func': job_search_func, 'description': 'Search for job opportunities'},
-        {'name': 'learning_search', 'func': learning_search_func, 'description': 'Search for learning resources'},
-        {'name': 'company_search', 'func': company_search_func, 'description': 'Search for company information'},
-        {'name': 'salary_search', 'func': salary_search_func, 'description': 'Search for salary information'}
+        Tool(
+            name="job_search",
+            func=job_search_func,
+            description="Search for job opportunities using job title and requirements"
+        ),
+        Tool(
+            name="learning_search", 
+            func=learning_search_func,
+            description="Search for learning resources and courses for specific skills"
+        ),
+        Tool(
+            name="company_search",
+            func=company_search_func, 
+            description="Search for company information and current job openings"
+        ),
+        Tool(
+            name="salary_search",
+            func=salary_search_func,
+            description="Search for salary information for specific job titles and locations"
+        )
     ]
     
     return tools

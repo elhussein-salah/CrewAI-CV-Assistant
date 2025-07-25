@@ -39,8 +39,8 @@ def check_ollama_model():
         if response.status_code == 200:
             models = response.json().get('models', [])
             model_names = [model['name'] for model in models]
-            
-            required_models = ['llama3', 'mistral', 'codellama']
+
+            required_models = ['deepseek-r1:1.5b', 'llama3', 'mistral']
             available_models = [model for model in required_models if any(model in name for name in model_names)]
             
             if available_models:
@@ -48,7 +48,7 @@ def check_ollama_model():
                 return True
             else:
                 print("❌ No compatible models found")
-                print("Please pull a model: ollama pull llama3")
+                print("Please pull a model: ollama pull deepseek-r1:1.5b or ollama pull llama3")
                 return False
     except:
         pass

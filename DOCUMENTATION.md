@@ -89,9 +89,9 @@ crewai_cv_assistant/
 ```bash
 # Download from https://ollama.ai/
 # After installation, pull a model:
-ollama pull llama3
+ollama pull deepseek-r1:1.5b
 # or
-ollama pull mistral
+ollama pull llama3
 ```
 
 ### Step 2: Clone and Setup
@@ -109,7 +109,7 @@ python setup.py
 ### Step 3: Configuration
 1. Verify `.env` file settings:
    ```
-   OLLAMA_MODEL=llama3
+   OLLAMA_MODEL=deepseek-r1:1.5b
    OLLAMA_BASE_URL=http://localhost:11434
    ```
 
@@ -180,7 +180,7 @@ start.bat
 ### Environment Variables (.env)
 ```bash
 # Ollama Configuration
-OLLAMA_MODEL=llama3              # Model to use
+OLLAMA_MODEL=deepseek-r1:1.5b              # Model to use
 OLLAMA_BASE_URL=http://localhost:11434  # Ollama server URL
 
 # Optional: Enhanced search
@@ -284,8 +284,8 @@ app_logger.log_agent_start("AgentName", "TaskDescription")
 
 2. **Model Not Found**
    ```
-   Error: Model 'llama3' not found
-   Solution: Pull model (ollama pull llama3)
+   Error: Model 'deepseek-r1:1.5b' not found
+   Solution: Pull model (ollama pull deepseek-r1:1.5b)
    ```
 
 3. **Import Errors**

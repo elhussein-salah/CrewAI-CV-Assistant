@@ -242,3 +242,36 @@ class TextCleaner:
             text = re.sub(rf'\b{old}\b', new, text, flags=re.IGNORECASE)
         
         return text
+    
+    @staticmethod
+    def clean_agent_output(text: str) -> str:
+        """
+        Clean agent output by removing unwanted tags and formatting
+        
+        Args:
+            text: The raw output from an agent (string or object)
+            
+        Returns:
+            Cleaned text string
+        """
+        # Convert to string if not already
+        if not isinstance(text, str):
+            text = str(text)
+        
+        # Remove <think></think> tags and their content
+        text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        
+        # Remove other common AI reasoning tags
+        text = re.sub(r'<reasoning>.*?</reasoning>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<analysis>.*?</analysis>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<thoughts>.*?</thoughts>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<internal>.*?</internal>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        
+        # Clean up extra whitespace
+        text = re.sub(r'\n\s*\n\s*\n', '\n\n', text)  # Replace multiple newlines with double newline
+        text = re.sub(r'^\s+|\s+$', '', text)  # Strip leading/trailing whitespace
+        
+        # Remove empty lines at the beginning
+        text = re.sub(r'^\n+', '', text)
+        
+        return text

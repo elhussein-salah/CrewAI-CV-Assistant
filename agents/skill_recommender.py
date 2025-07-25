@@ -2,6 +2,7 @@ from crewai import Agent
 from config.crew_config import CrewConfig
 from tools.search_tool import create_search_tools
 from utils.logger import app_logger
+from utils.text_cleaner import TextCleaner
 import os
 
 class SkillRecommenderAgent:
@@ -73,8 +74,21 @@ class SkillRecommenderAgent:
                 job_description=job_description
             )
             
-            # Execute the skill analysis
-            result = self.agent.llm.invoke(formatted_prompt)
+            # Execute the skill analysis using the LLM directly
+            try:
+                # Try different methods based on LLM version
+                if hasattr(self.llm, 'invoke'):
+                    result = self.llm.invoke(formatted_prompt)
+                elif hasattr(self.llm, '__call__'):
+                    result = self.llm(formatted_prompt)
+                elif hasattr(self.llm, 'generate'):
+                    result = self.llm.generate([formatted_prompt]).generations[0][0].text
+                else:
+                    # Fallback to string conversion
+                    result = str(self.llm.invoke(formatted_prompt))
+            except Exception as llm_error:
+                # Fallback method
+                result = f"LLM invocation failed: {llm_error}. Using fallback analysis."
             
             # Enhance with search results for key skills
             try:
@@ -82,13 +96,13 @@ class SkillRecommenderAgent:
                 enhanced_result = result + "\n\n## 🔍 Additional Learning Resources:\n"
                 
                 # Search for learning resources for common skills
-                learning_tool = next((tool for tool in self.search_tools if tool['name'] == 'learning_search'), None)
+                learning_tool = next((tool for tool in self.search_tools if tool.name == 'learning_search'), None)
                 if learning_tool:
                     # Sample skills to search for (in a real implementation, this would be extracted from the analysis)
                     sample_skills = ["Python", "React", "Machine Learning", "Data Analysis"]
                     for skill in sample_skills[:2]:  # Limit to 2 to avoid too many requests
                         try:
-                            search_results = learning_tool['func'](skill)
+                            search_results = learning_tool.func(skill)
                             enhanced_result += f"\n### {skill} Learning Resources:\n{search_results[:500]}...\n"
                         except:
                             continue
@@ -98,8 +112,11 @@ class SkillRecommenderAgent:
                 # If search enhancement fails, continue with basic result
                 app_logger.warning(f"Search enhancement failed: {e}")
             
+            # Clean the agent output using regex to remove think tags
+            cleaned_result = TextCleaner.clean_agent_output(result)
+            
             app_logger.log_agent_complete("Skill Recommender", "Skill Gap Analysis", 0)
-            return result
+            return cleaned_result
             
         except Exception as e:
             error_msg = f"Skill recommendation analysis failed: {str(e)}"
@@ -120,9 +137,9 @@ class SkillRecommenderAgent:
             app_logger.log_search_query("learning_search", skill)
             
             # Use the learning search tool
-            learning_tool = next((tool for tool in self.search_tools if tool['name'] == 'learning_search'), None)
+            learning_tool = next((tool for tool in self.search_tools if tool.name == 'learning_search'), None)
             if learning_tool:
-                results = learning_tool['func'](skill)
+                results = learning_tool.func(skill)
                 app_logger.log_search_results("learning_search", skill, len(results.split('\n')))
                 return results
             else:

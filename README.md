@@ -22,7 +22,7 @@ A comprehensive AI-powered CV analysis and job matching system built with CrewAI
 1. **Install Ollama**:
    ```bash
    # Download from https://ollama.ai/
-   # Pull a model (e.g., Llama 3 or Mistral)
+   # Pull a model (e.g., deepseek-r1:1.5b, Llama 3 or Mistral)
    ollama pull llama3
    ```
 
@@ -72,7 +72,3 @@ crewai_cv_assistant/
 - **Models**: Change Ollama model in `config/ollama_config.py`
 - **Prompts**: Modify agent prompts in `prompts/` directory
 - **Search Tools**: Extend search capabilities in `tools/search_tool.py`
-
-## License
-
-MIT License

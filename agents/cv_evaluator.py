@@ -2,6 +2,7 @@ from crewai import Agent
 from langchain.tools import Tool
 from config.crew_config import CrewConfig
 from utils.logger import app_logger
+from utils.text_cleaner import TextCleaner
 import os
 
 class CVEvaluatorAgent:
@@ -59,11 +60,27 @@ class CVEvaluatorAgent:
             # Format the prompt with CV text
             formatted_prompt = self.system_prompt.format(cv_text=cv_text)
             
-            # Execute the evaluation
-            result = self.agent.llm.invoke(formatted_prompt)
+            # Execute the evaluation using the LLM directly
+            try:
+                # Try different methods based on LLM version
+                if hasattr(self.llm, 'invoke'):
+                    result = self.llm.invoke(formatted_prompt)
+                elif hasattr(self.llm, '__call__'):
+                    result = self.llm(formatted_prompt)
+                elif hasattr(self.llm, 'generate'):
+                    result = self.llm.generate([formatted_prompt]).generations[0][0].text
+                else:
+                    # Fallback to string conversion
+                    result = str(self.llm.invoke(formatted_prompt))
+            except Exception as llm_error:
+                # Fallback method
+                result = f"LLM invocation failed: {llm_error}. Using fallback analysis."
+            
+            # Clean the agent output using regex to remove think tags
+            cleaned_result = TextCleaner.clean_agent_output(result)
             
             app_logger.log_agent_complete("CV Evaluator", "ATS Evaluation", 0)
-            return result
+            return cleaned_result
             
         except Exception as e:
             error_msg = f"CV evaluation failed: {str(e)}"

@@ -1,0 +1,92 @@
+2025-07-24 17:40:02 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 17:40:02 - cv_assistant - INFO - User input received - CV length: 1889 chars, JD length: 3111 chars
+2025-07-24 17:40:02 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 17:40:02 - cv_assistant - ERROR - Agent 'CV Evaluator' error in task 'ATS Evaluation': CV evaluation failed: 'LLM' object has no attribute 'invoke'
+2025-07-24 17:40:02 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 17:40:02 - cv_assistant - ERROR - Agent 'CV Improver' error in task 'CV Optimization': CV improvement analysis failed: 'LLM' object has no attribute 'invoke'
+2025-07-24 17:40:02 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 17:40:02 - cv_assistant - ERROR - Agent 'Skill Recommender' error in task 'Skill Gap Analysis': Skill recommendation analysis failed: 'LLM' object has no attribute 'invoke'
+2025-07-24 17:40:02 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 17:40:02 - cv_assistant - ERROR - Agent 'Job Finder' error in task 'Job Search': Job search failed: 'LLM' object has no attribute 'invoke'
+2025-07-24 17:40:02 - cv_assistant - INFO - Crew execution completed - 4 tasks in 0.01s
+2025-07-24 17:49:29 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 17:49:29 - cv_assistant - INFO - User input received - CV length: 1889 chars, JD length: 3111 chars
+2025-07-24 17:49:29 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 17:50:29 - cv_assistant - INFO - Agent 'CV Evaluator' completed task: ATS Evaluation (Duration: 0.00s)
+2025-07-24 17:50:29 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 17:53:48 - cv_assistant - INFO - Agent 'CV Improver' completed task: CV Optimization (Duration: 0.00s)
+2025-07-24 17:53:48 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 17:57:39 - cv_assistant - INFO - Agent 'Skill Recommender' completed task: Skill Gap Analysis (Duration: 0.00s)
+2025-07-24 17:57:39 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 18:00:34 - cv_assistant - WARNING - Job search enhancement failed: 'dict' object has no attribute 'name'
+2025-07-24 18:00:34 - cv_assistant - INFO - Agent 'Job Finder' completed task: Job Search (Duration: 0.00s)
+2025-07-24 18:00:34 - cv_assistant - INFO - Crew execution completed - 4 tasks in 664.73s
+2025-07-24 18:18:48 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 18:18:48 - cv_assistant - INFO - User input received - CV length: 1889 chars, JD length: 3111 chars
+2025-07-24 18:18:48 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 18:20:19 - cv_assistant - INFO - Agent 'CV Evaluator' completed task: ATS Evaluation (Duration: 0.00s)
+2025-07-24 18:20:19 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 18:23:40 - cv_assistant - INFO - Agent 'CV Improver' completed task: CV Optimization (Duration: 0.00s)
+2025-07-24 18:23:40 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 18:26:54 - cv_assistant - INFO - Agent 'Skill Recommender' completed task: Skill Gap Analysis (Duration: 0.00s)
+2025-07-24 18:26:54 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 18:29:57 - cv_assistant - WARNING - Job search enhancement failed: 'dict' object has no attribute 'name'
+2025-07-24 18:29:57 - cv_assistant - INFO - Agent 'Job Finder' completed task: Job Search (Duration: 0.00s)
+2025-07-24 18:29:57 - cv_assistant - INFO - Crew execution completed - 4 tasks in 669.04s
+2025-07-24 18:38:23 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 18:38:23 - cv_assistant - INFO - User input received - CV length: 1889 chars, JD length: 3111 chars
+2025-07-24 18:38:23 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 18:38:48 - cv_assistant - INFO - Agent 'CV Evaluator' completed task: ATS Evaluation (Duration: 0.00s)
+2025-07-24 18:38:48 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 18:40:00 - cv_assistant - INFO - Agent 'CV Improver' completed task: CV Optimization (Duration: 0.00s)
+2025-07-24 18:40:00 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 18:43:07 - cv_assistant - INFO - Agent 'Skill Recommender' completed task: Skill Gap Analysis (Duration: 0.00s)
+2025-07-24 18:43:07 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 18:44:31 - cv_assistant - WARNING - Job search enhancement failed: 'dict' object has no attribute 'name'
+2025-07-24 18:44:31 - cv_assistant - INFO - Agent 'Job Finder' completed task: Job Search (Duration: 0.00s)
+2025-07-24 18:44:31 - cv_assistant - INFO - Crew execution completed - 4 tasks in 368.38s
+2025-07-24 18:47:22 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 18:47:22 - cv_assistant - INFO - User input received - CV length: 3379 chars, JD length: 3111 chars
+2025-07-24 18:47:22 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 18:48:07 - cv_assistant - INFO - Agent 'CV Evaluator' completed task: ATS Evaluation (Duration: 0.00s)
+2025-07-24 18:48:07 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 18:49:18 - cv_assistant - INFO - Agent 'CV Improver' completed task: CV Optimization (Duration: 0.00s)
+2025-07-24 18:49:18 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 18:50:14 - cv_assistant - INFO - Agent 'Skill Recommender' completed task: Skill Gap Analysis (Duration: 0.00s)
+2025-07-24 18:50:14 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 18:51:23 - cv_assistant - WARNING - Job search enhancement failed: 'dict' object has no attribute 'name'
+2025-07-24 18:51:23 - cv_assistant - INFO - Agent 'Job Finder' completed task: Job Search (Duration: 0.00s)
+2025-07-24 18:51:23 - cv_assistant - INFO - Crew execution completed - 4 tasks in 240.92s
+2025-07-24 20:06:20 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 20:06:20 - cv_assistant - INFO - User input received - CV length: 1889 chars, JD length: 3111 chars
+2025-07-24 20:06:20 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 20:07:27 - cv_assistant - INFO - Agent 'CV Evaluator' completed task: ATS Evaluation (Duration: 0.00s)
+2025-07-24 20:07:27 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 20:09:32 - cv_assistant - INFO - Agent 'CV Improver' completed task: CV Optimization (Duration: 0.00s)
+2025-07-24 20:09:32 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 20:11:29 - cv_assistant - INFO - Agent 'Skill Recommender' completed task: Skill Gap Analysis (Duration: 0.00s)
+2025-07-24 20:11:29 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 20:16:11 - cv_assistant - INFO - Agent 'Job Finder' completed task: Job Search (Duration: 0.00s)
+2025-07-24 20:16:11 - cv_assistant - INFO - Crew execution completed - 4 tasks in 590.95s
+2025-07-24 20:35:46 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 20:35:46 - cv_assistant - INFO - User input received - CV length: 3379 chars, JD length: 3111 chars
+2025-07-24 20:35:46 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 20:37:03 - cv_assistant - INFO - Agent 'CV Evaluator' completed task: ATS Evaluation (Duration: 0.00s)
+2025-07-24 20:37:03 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 20:39:17 - cv_assistant - INFO - Agent 'CV Improver' completed task: CV Optimization (Duration: 0.00s)
+2025-07-24 20:39:17 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 20:42:25 - cv_assistant - INFO - Agent 'Skill Recommender' completed task: Skill Gap Analysis (Duration: 0.00s)
+2025-07-24 20:42:25 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 20:45:35 - cv_assistant - INFO - Agent 'Job Finder' completed task: Job Search (Duration: 0.00s)
+2025-07-24 20:45:35 - cv_assistant - INFO - Crew execution completed - 4 tasks in 589.72s
+2025-07-24 21:08:26 - cv_assistant - INFO - All agents initialized successfully
+2025-07-24 21:08:26 - cv_assistant - INFO - User input received - CV length: 3379 chars, JD length: 3111 chars
+2025-07-24 21:08:26 - cv_assistant - INFO - Agent 'CV Evaluator' started task: ATS Evaluation
+2025-07-24 21:10:17 - cv_assistant - INFO - Agent 'CV Evaluator' completed task: ATS Evaluation (Duration: 0.00s)
+2025-07-24 21:10:17 - cv_assistant - INFO - Agent 'CV Improver' started task: CV Optimization
+2025-07-24 21:13:11 - cv_assistant - INFO - Agent 'CV Improver' completed task: CV Optimization (Duration: 0.00s)
+2025-07-24 21:13:11 - cv_assistant - INFO - Agent 'Skill Recommender' started task: Skill Gap Analysis
+2025-07-24 21:15:41 - cv_assistant - INFO - Agent 'Skill Recommender' completed task: Skill Gap Analysis (Duration: 0.00s)
+2025-07-24 21:15:41 - cv_assistant - INFO - Agent 'Job Finder' started task: Job Search
+2025-07-24 21:20:36 - cv_assistant - INFO - Agent 'Job Finder' completed task: Job Search (Duration: 0.00s)
+2025-07-24 21:20:36 - cv_assistant - INFO - Crew execution completed - 4 tasks in 729.50s
